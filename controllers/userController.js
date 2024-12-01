@@ -197,7 +197,7 @@ const sendLoginCode = asyncHandler(async (req, res) => {
   const subject = "Login Access Code - AUTH:Z";
   const send_to = email;
   const sent_from = process.env.EMAIL_USER;
-  const reply_to = "noreply@zino.com";
+  const reply_to = "khatrilikitha@gmail.com";
   const template = "loginCode";
   const name = user.name;
   const link = decryptedLoginCode;
@@ -322,7 +322,7 @@ const sendVerificationEmail = asyncHandler(async (req, res) => {
   const subject = "Verify Your Account - AUTH:Z";
   const send_to = user.email;
   const sent_from = process.env.EMAIL_USER;
-  const reply_to = "noreply@zino.com";
+  const reply_to = "khatrilikitha@gmail.comm";
   const template = "verifyEmail";
   const name = user.name;
   const link = verificationUrl;
@@ -574,7 +574,7 @@ const forgotPassword = asyncHandler(async (req, res) => {
   const subject = "Password Reset Request - AUTH:Z";
   const send_to = user.email;
   const sent_from = process.env.EMAIL_USER;
-  const reply_to = "noreply@zino.com";
+  const reply_to = "khatrilikitha@gmail.com";
   const template = "forgotPassword";
   const name = user.name;
   const link = resetUrl;
