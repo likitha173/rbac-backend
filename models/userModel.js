@@ -37,8 +37,8 @@ const userSchema = mongoose.Schema(
     role: {
       type: String,
       required: true,
-      default: "subscriber",
-      // subscriber, author, and admin (suspended)
+      default: "customer",
+      // customer, author, and admin (suspended)
     },
     isVerified: {
       type: Boolean,
