@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://role-based-access-control-rho.vercel.app"],
+    origin: ["http://localhost:3000", "https://authz-app.vercel.app"],
     credentials: true,
   })
 );
