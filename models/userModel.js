@@ -40,10 +40,10 @@ const userSchema = mongoose.Schema(
       default: "customer",
       // customer, author, and admin (suspended)
     },
-    isVerified: {
-      type: Boolean,
-      default: false,
-    },
+    // isVerified: {
+    //   type: Boolean,
+    //   default: false,
+    // },
     userAgent: {
       type: Array,
       required: true,

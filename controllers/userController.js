@@ -102,11 +102,11 @@ const loginUser = asyncHandler(async (req, res) => {
   console.log(thisUserAgent);
   const allowedAgent = user.userAgent.includes(thisUserAgent);
 
-  if (!allowedAgent) {
-    // No email sending for 2FA, just error response
-    res.status(400);
-    throw new Error("New browser or device detected");
-  }
+  // if (!allowedAgent) {
+  //   // No email sending for 2FA, just error response
+  //   res.status(400);
+  //   throw new Error("New browser or device detected");
+  // }
 
   // Generate Token
   const token = generateToken(user._id);
