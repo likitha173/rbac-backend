@@ -237,12 +237,12 @@ const loginStatus = asyncHandler(async (req, res) => {
   }
 
   // Verify token
-  const verified = jwt.verify(token, process.env.JWT_SECRET);
+  // const verified = jwt.verify(token, process.env.JWT_SECRET);
 
-  if (verified) {
-    return res.json(true);
-  }
-  return res.json(false);
+  // if (verified) {
+  //   return res.json(true);
+  // }
+  // return res.json(false);
 });
 
 const upgradeUser = asyncHandler(async (req, res) => {
